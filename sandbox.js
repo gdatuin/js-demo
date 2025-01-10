@@ -149,3 +149,231 @@
 // console.log(age > 20);
 // console.log(age < 20);
 // console.log(age >= 25);
+
+// let name = 'shaun';
+
+// console.log(name == 'shaun');
+// console.log(name == 'Shaun');
+// console.log(name > 'Shaun');
+
+// let age = 25;
+
+// loose comparison (different types can still be equal)
+
+//console.log(age == 25);
+// console.log(age == '25'); // converts string to number
+//console.log(age != 25);
+//console.log(age != '25');
+
+// strict comparison (different types cannot be equal)
+
+// console.log(age === 25);
+// console.log(age === '25'); // will not convert to number
+
+// // type conversion
+// let score = '100';
+
+// score = Number(score); // not parseint
+// console.log(score + 1);
+
+// console.log(typeof score);
+
+// let result = Number('Hello');
+// console.log(result); // = NaN
+
+// let result = String(50);
+// console.log(result, typeof result);
+
+// let result = Boolean(100);
+
+// let result = Boolean('0');
+
+// // for loops
+// for(let i = 0;  i < 5; i++){
+//     console.log('in loop:', i);
+// }
+
+// console.log('loop finished');
+
+// const names = ['shaun', 'mario', 'luigi'];
+
+// for(let i = 0; i < names.length; i++){
+//     //console.log(names[i]);
+//     let html = `<div>${names[i]}</div>`;
+//     console.log(html);
+// }
+
+// while loops
+// const names = ['shaun', 'mario', 'luigi'];
+
+// let i = 0;
+
+// while(i < 5){
+//  console.log('in loop: ', i);
+//  i++
+// }
+
+// let i  = 0;
+// while(i < names.length){
+//     console.log(names[i]);
+//     i++;
+// }
+
+// do while loops
+
+// let i = 5;
+
+// do{
+//     console.log('val of i is: ', i);
+//     i++;
+// } while(i < 5);
+
+// if statements
+
+// const age = 20;
+
+// if(age > 20){
+//     console.log('you are over 20 years old');
+// }
+
+// const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
+
+//     if(ninjas.length > 3){
+
+//         console.log("that's a lot of ninjas");
+//     }
+
+
+// // logical operators - OR || and AND &&
+
+// const password = 'p@ssword1234';
+
+// if(password.length >= 12 && password.includes('@')){
+//     console.log('that password is mighty strong');
+// } else if (password.length >= 8 || password.includes('@') && password.length >= 5){
+//     console.log('that password is strong enough!');
+// } else{
+//     console.log('password is not strong enough');
+// }
+
+// logical NOT (!)
+
+// let user = false;
+
+// if(!user){
+
+// }
+
+// console.log(!true);
+// console.log(!false);
+
+// break and continute
+
+// const scores = [50, 25, 0, 30, 100, 20, 10];
+
+// for(let i = 0; i < scores.length; i++){
+
+//     console.log('your score: ', scores[i]);
+
+//     if(scores[i] === 100){
+//         console.log('congrats, you got the top score!');
+//         break;
+//     }
+// }
+
+// // switch statements
+// const grade = 'D';
+
+// switch(grade){
+//     case 'A':
+//     console.log('you got an A!');
+//     break;
+//     case 'B':
+//     console.log('you got an B!');
+//     break;
+//     case 'C':
+//     console.log('you got an C!');
+//     break;
+//     case 'D':
+//     console.log('you got an D!');
+//     break;
+//     case 'E':
+//     console.log('you got an E!');
+//     break;
+//     default:
+//         console.log('not a valid grade');
+// }
+
+// function declaration
+// function greet(){
+//     console.log('hello there');
+// }
+
+// // function expression
+// const speak = function(){
+//     console.log('good day!');
+// };
+
+// greet(); 
+// speak();
+
+// arguments & parameters
+
+// const speak = function(name = 'luigi', time = 'night'){
+//     console.log('good ${time}! ${name}');
+// };
+
+// speak();
+
+ // returning values
+// const speak = function(name = 'luigi', time = 'night'){
+//     console.log('good ${time}! ${name}');
+// };
+
+// speak();
+
+// const calcArea = function(radius){
+//     return 3.14 * radius**2;
+
+// }
+
+// const area = calcArea(5);
+// console.log(area);
+
+// const calcVol = function(area){
+
+// };
+
+// calcVol(area)
+
+// arrow function
+// const calcArea = radius => 3.14 * radius**2;
+
+// const greet = () => 'hello, world'
+
+
+// const name = 'shaun';
+
+// // functions
+
+// const greet = () => 'hello';
+
+// let resultOne = greet();
+// console.log(resultOne);
+
+// // methods
+
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+
+// get a regrence to the 'ul'
+const ul = document.querySelector('.people');
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = ``;
+
+people.forEach(function(person){
+    // create html template
+    html += `<li style="color:purple">${person}</li>`
+});
