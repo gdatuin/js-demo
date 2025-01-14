@@ -367,13 +367,125 @@
 // console.log(resultTwo);
 
 // get a regrence to the 'ul'
-const ul = document.querySelector('.people');
+// const ul = document.querySelector('.people');
 
-const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-let html = ``;
+// let html = ``;
 
-people.forEach(function(person){
-    // create html template
-    html += `<li style="color:purple">${person}</li>`
-});
+// people.forEach(function(person){
+//     // create html template
+//     html += `<li style="color:purple">${person}</li>`
+// });
+
+// object literals
+
+// const blogs = [
+//     { title: 'why mac & cheese rules', likes: 30 },
+//     { title: '10 things to make with marmite', likes: 50}
+// ]
+// let user = {
+//  name: 'crystal',
+//  age: 30,
+//  email: 'crystal@thenetninja.co.uk',
+//  location: 'berlin',
+//  blogs: [ { title: 'why mac & cheese rules', likes: 30 },
+//  { title: '10 things to make with marmite', likes: 50} ],
+//  login: function(){
+//     console.log('the user logged in');
+//  },
+//  logout: function(){
+//     console.log('the user logged out');
+//  },
+//  logBlogs: function(){
+//     //this.blogs
+//     console.log('this user has written the following blogs:');
+//     this.blogs.forEach(blog => {
+//         console.log(blog.title, blog.likes);
+//     })
+//  }
+// };
+
+// user.login();
+// console.log(user);
+// console.log(user.name);
+
+// // user.age = 35;
+// console.log(user.age);
+
+// console.log(user['name']);
+// console.log(user['email']);
+// user['name'] = 'chun-li';
+// console.log(user['name']);
+
+// Math object
+
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
+
+// const area = 7.7;
+
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+// console.log(Math.ceil(area));
+// console.log(Math.trunc(area));
+
+// // random numbers
+
+// const random = Math.random();
+
+// console.log(random);
+// console.log(Math.round(random));
+
+// const para = document.querySelector('div.error');
+
+// console.log(para);
+
+// const paras = document.querySelectorAll('p');
+// const errors = document.querySelectorAlll('.error');
+
+// paras.forEach(para => {
+//     console.log(para);
+// });
+
+// console.log(paras[2]);
+
+// get an element by ID
+// const title = document.getElementById('page-title');
+
+// // get elements by their class name
+// const errors = document.getElementsByClassName('error')
+
+// get elements by their tag name
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// console.log(paras[1]);
+
+// const para = document.querySelector('p');
+
+// //para.innerText = 'ninjas are awesome!';
+
+// const paras = document.querySelectorAll('p');
+
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText =+ ' new text';
+// });
+
+// const content = document.querySelector('.content');
+
+// // console.log(content.innerHTML)
+// // content.innerHTML += '<h2>This is a new h2</h2>';
+
+// const people = ['mario', 'luigi', 'yoshi'];
+
+// people.forEach(person => {
+//     content.innerHTML += `<p>${person}</p>`;
+// });
+
+// const link = document.querySelector('a');
+
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// link.innerText = 'The Net Ninja Website';
